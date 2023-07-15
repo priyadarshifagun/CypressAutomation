@@ -1,0 +1,8 @@
+{
+  "name": "Fagun Priyadarshi",
+  "email": "hello@cypress.io",
+  "gender": "Male",
+  "password": "newuser@1234",
+  "productName": ["Blackberry", "iphone X", "Samsung Note 8"],
+  "country": "India"
+}
