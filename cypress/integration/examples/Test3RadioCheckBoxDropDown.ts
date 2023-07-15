@@ -38,5 +38,7 @@ describe("My First Test", () => {
     // // Radio Button Operations
     // cy.get('input[value="radio1"]').click().should('be.checked')
     cy.log(process.env["ADMIN_USER"])
+    console.log(process.env["ADMIN_USER"])
+    // cy.task("log", process.env["ADMIN_USER"])
 });
 });

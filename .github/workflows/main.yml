@@ -13,4 +13,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          command: npx cypress run --env --spec "cypress\\integration\\examples\\Test3RadioCheckBoxDropDown.ts" --browser=chrome
+          command: npx cypress run --spec "cypress\\integration\\examples\\Test3RadioCheckBoxDropDown.ts" --browser=chrome
