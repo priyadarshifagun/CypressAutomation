@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"],
+    "isolatedModules": false,
+    "strict": false,
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "allowJs": true,
+    "baseUrl": "..",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "paths": {
+      "^cypress": ["../cypress/*"]
+    }
+  },
+
+  "include": ["../node_modules/cypress", "**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.graphql",
+    "cache/Cypress/**"
+  ]
+}

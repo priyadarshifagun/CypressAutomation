@@ -1,0 +1,28 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "testSuiteHeaded": "npm run test -- --headed",
+    "testSuiteChrome": "npm run test -- --browser chrome",
+    "testSuiteHeadedChromeReporter": "npm run testSuiteHeaded -- --browser chrome --reporter mochawesome",
+    "testSuiteChromeOnDashboard": "npm run test -- --record --key 9f3e3bfb-de26-48d4-8c69-c631efcc11b3 --spec cypress/integration/examples/*.ts --headed --browser chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress": "^12.11.0",
+    "neat-csv": "5.1.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "convert-excel-to-json": "^1.7.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-sql-server": "^1.0.0",
+    "typescript": "^5.0.4"
+  }
+}
