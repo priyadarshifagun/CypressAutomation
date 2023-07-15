@@ -32,8 +32,9 @@ describe("My First Test", function () {
         // cy.get('#displayed-text').should('be.visible')
         // // Radio Button Operations
         // cy.get('input[value="radio1"]').click().should('be.checked')
-        cy.log(process.env["ADMIN_USER"]);
-        console.log(process.env["ADMIN_USER"]);
+        var envs = Cypress.env();
+        cy.log("Current User: ", envs["envs"]);
+        console.log("Current User: ", envs["envs"]);
         // cy.task("log", process.env["ADMIN_USER"])
     });
 });
