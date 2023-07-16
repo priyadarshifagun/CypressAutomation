@@ -61,6 +61,13 @@ async function setupNodeEvents(on, config) {
     },
   });
 
+  on("task",{
+    log(message){
+      console.log(message)
+      return null
+    }
+  })
+
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;
 }

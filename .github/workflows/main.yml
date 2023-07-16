@@ -1,7 +1,9 @@
 name: Cypress Tests
 
 on: push
-
+env:
+  CYPRESS_user1: ${{secrets.ADMIN_USER}}
+  CYPRESS_user2: ${{secrets.USER1}}
 jobs:
   cypress-run:
     runs-on: self-hosted
@@ -14,6 +16,3 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           command: npx cypress run --spec cypress\\integration\\examples\\Test3RadioCheckBoxDropDown.ts --browser=chrome
-        env:
-          # overwrite commit message sent to Cypress Cloud
-          CYPRESS_user1: ${{secrets.USER1}}

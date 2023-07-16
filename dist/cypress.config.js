@@ -95,6 +95,12 @@ function setupNodeEvents(on, config) {
                             return result;
                         }
                     });
+                    on("task", {
+                        log: function (message) {
+                            console.log(message);
+                            return null;
+                        }
+                    });
                     // Make sure to return the config object as it might have been modified by the plugin.
                     return [2 /*return*/, config];
             }
