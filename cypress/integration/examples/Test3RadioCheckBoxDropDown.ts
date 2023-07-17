@@ -43,7 +43,10 @@ describe("My First Test", () => {
     cy.log("Users: ", envs["users"]["user1"]);
     cy.task("log", "Admin User: ", envs["admin"]);
     console.log("Admin User: ", envs["admin"]);
-    cy.log("Admin User: ", envs["admin"]);
+    cy.log("Admin User: ", envs["watchword"]);
+    cy.task("log", "watchword: ", envs["watchword"]);
+    console.log("watchword: ", envs["watchword"]);
+    cy.log("watchword: ", envs["watchword"]);
     // cy.task("log", process.env["ADMIN_USER"])
   });
 });

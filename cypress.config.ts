@@ -80,6 +80,7 @@ export default defineConfig({
       user1: "",
     },
     admin: "",
+    watchword: "",
   },
   e2e: {
     baseUrl: "https://rahulshettyacademy.com",

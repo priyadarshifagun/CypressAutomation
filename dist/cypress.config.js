@@ -114,7 +114,8 @@ exports["default"] = cypress_1.defineConfig({
         users: {
             user1: ""
         },
-        admin: ""
+        admin: "",
+        watchword: ""
     },
     e2e: {
         baseUrl: "https://rahulshettyacademy.com",
