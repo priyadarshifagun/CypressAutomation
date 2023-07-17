@@ -2,7 +2,7 @@ name: Cypress Tests
 
 on: push
 env:
-  CYPRESS_users: ${{secrets.ADMIN_USER}}
+  CYPRESS_users: ${{secrets.ADMIN}}
 jobs:
   cypress-run:
     runs-on: self-hosted
