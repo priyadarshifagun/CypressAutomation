@@ -38,11 +38,8 @@ describe("My First Test", () => {
     // // Radio Button Operations
     // cy.get('input[value="radio1"]').click().should('be.checked')
     const envs = Cypress.env();
-    cy.task("log", "Admin User: ", envs["user1"]);
-    console.log("Admin User: ", envs["user1"]);
-    cy.log("Current User: ", envs["user2"]);
-    cy.task("log", "User1: ", envs["user2"]);
-    console.log("Current User: ", envs["user2"]);
+    cy.task("log", "Admin User: ", envs["users"]);
+    console.log("Admin User: ", envs["users"]);
     // cy.task("log", process.env["ADMIN_USER"])
   });
 });

@@ -57,16 +57,16 @@ async function setupNodeEvents(on, config) {
           "cypress/downloads/order-invoice_fagun.qa.xlsx"
         ), // fs.readFileSync return a Buffer
       });
-      return result
+      return result;
     },
   });
 
-  on("task",{
-    log(message){
-      console.log(message)
-      return null
-    }
-  })
+  on("task", {
+    log(message) {
+      console.log(message);
+      return null;
+    },
+  });
 
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;
@@ -76,10 +76,11 @@ export default defineConfig({
   defaultCommandTimeout: 15000,
   env: {
     url: "https://rahulshettyacademy.com",
-    user1:"",
-    user2:"",
-    user3:"",
-    user4:"",
+    users: {
+      user1: {
+        id: ""
+      }
+    },
   },
   e2e: {
     baseUrl: "https://rahulshettyacademy.com",

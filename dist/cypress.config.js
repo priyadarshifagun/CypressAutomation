@@ -111,10 +111,11 @@ exports["default"] = cypress_1.defineConfig({
     defaultCommandTimeout: 15000,
     env: {
         url: "https://rahulshettyacademy.com",
-        user1: "",
-        user2: "",
-        user3: "",
-        user4: ""
+        users: {
+            user1: {
+                id: ""
+            }
+        }
     },
     e2e: {
         baseUrl: "https://rahulshettyacademy.com",
