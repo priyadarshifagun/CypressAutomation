@@ -76,7 +76,7 @@ export default defineConfig({
   defaultCommandTimeout: 15000,
   env: {
     url: "https://rahulshettyacademy.com",
-    users: "",
+    users: ""
   },
   e2e: {
     baseUrl: "https://rahulshettyacademy.com",
