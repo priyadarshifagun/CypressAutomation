@@ -38,9 +38,9 @@ describe("My First Test", () => {
     // // Radio Button Operations
     // cy.get('input[value="radio1"]').click().should('be.checked')
     const envs = Cypress.env();
-    cy.task("log", "Users: ", envs["users"]);
-    console.log("Users: ", envs["users"]);
-    cy.log("Users: ", envs["users"]);
+    cy.task("log", "Users: ", envs["users"]["user1"]);
+    console.log("Users: ", envs["users"]["user1"]);
+    cy.log("Users: ", envs["users"]["user1"]);
     cy.task("log", "Admin User: ", envs["admin"]);
     console.log("Admin User: ", envs["admin"]);
     cy.log("Admin User: ", envs["admin"]);
