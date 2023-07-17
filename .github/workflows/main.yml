@@ -4,7 +4,7 @@ on: push
 env:
   CYPRESS_users: ${{secrets.USERS}}
   CYPRESS_admin: ${{secrets.ADMIN}}
-  CYPRESS_watchword: ${{secrets.WATCHWORD}}
+  CYPRESS_watchword: ${{secrets.WATCHOUTWORD}}
 jobs:
   cypress-run:
     runs-on: self-hosted
