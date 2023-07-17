@@ -78,8 +78,8 @@ export default defineConfig({
     url: "https://rahulshettyacademy.com",
     users: {
       user1: {
-        id: ""
-      }
+        id: "",
+      },
     },
   },
   e2e: {
