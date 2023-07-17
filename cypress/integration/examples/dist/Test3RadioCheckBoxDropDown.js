@@ -35,6 +35,7 @@ describe("My First Test", function () {
         var envs = Cypress.env();
         cy.task("log", "Admin User: ", envs["users"]);
         console.log("Admin User: ", envs["users"]);
+        cy.log("Admin User: ", envs["users"]);
         // cy.task("log", process.env["ADMIN_USER"])
     });
 });
